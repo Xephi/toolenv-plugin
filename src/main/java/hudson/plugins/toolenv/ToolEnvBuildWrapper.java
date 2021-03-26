@@ -60,7 +60,7 @@ public class ToolEnvBuildWrapper extends BuildWrapper {
                         tool = (ToolInstallation) ((EnvironmentSpecific<?>) tool).forEnvironment(e);
                     }
                     String home = tool.getHome();
-                    listener.getLogger().println("Setting " + var + "=" + home);
+                    //listener.getLogger().println("Setting " + var + "=" + home);
                     env.put(var, home);
                 }
             }
